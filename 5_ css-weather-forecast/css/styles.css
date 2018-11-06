@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding:0;
+  transition: all .1s ease-in;
+}
+
+body {
+	background-color: #2B81AC;
+	padding: 30px;
+
+	color: white;
+	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	font-size: 18px;
+
+	min-width: 540px;
+}
+
+/*html {
+   
+}*/
+
+header {
+	height: 80px;	
+}
+
+footer {
+	height: 120px;
+}
+
+header div {
+	/*display: table-cell;
+	height: 20px;
+	vertical-align: bottom;*/
+	/*line-height: 80px;*/
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 66%;
+}
+
+footer p {
+	/*line-height: 50px;*/
+	padding: 25px 0 25px 0;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 66%;
+}
+
+
+
+header, main, footer {
+	background-color: #3399CC;
+}
+
+main {
+	
+	font-size: 0;
+	
+}
+
+ul {
+	width: 66%;
+	list-style-type: none;
+	border-style: solid;
+	border-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+li {
+	display: inline-block;
+	border: solid;
+	border-color: white;
+	font-size: 18px;
+
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+    height: 100px;
+    vertical-align: middle ;
+    text-align: center;
+}
+
+.single {
+	width: 25%;
+}
+
+.double {
+	width: 50%;
+}
+
+.quadruple {
+	width: 100%;
+}
+
+.city/*, .data*/{
+	/*text-align: center;*/
+	/*width: 100%;*/
+	/*display: table-cell;*/
+	/*vertical-align: bottom ;*/
+	/*line-height: 50px;*/
+	padding-top: 25px;
+}
+
+.data {
+	color: rgb(255,255,255,0.7);
+	/*padding-bottom: 10px;*/
+}
+
+.lisbon {
+	background-color: #3399CC;
+}
+
+.paris {
+	background-color: #33CCCC;
+}
+
+.belgrad {
+	background-color: #996699;
+}
+
+.moscow {
+	background-color: #C24747;
+}
+
+.tel_aviv {
+	background-color: #E2674A;
+}
+
+.cair {
+	background-color: #FFCC66;
+}
+
+.new_york {
+	background-color: #99CC99;
+}
+
+.new_delhi {
+	background-color: #669999;
+}
+
+.san_francisco {
+	background-color: #CC6699;
+}
+
+.tokyo {
+	background-color: #339966;
+}
+
+.sydney {
+	background-color: #666699;
+}
+
+ul:hover li {
+	opacity: 0.6;
+	/*color:red;
+	background-color: green;*/
+}
+
+ul li:hover {
+	opacity: 1.0;
+	/*background-color: red;*/
+}	
