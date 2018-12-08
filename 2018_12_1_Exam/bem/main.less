@@ -6,6 +6,9 @@
     &_section{
         width: 1170px;
         margin: 50px auto 0;
+        &__helping {
+            margin-top: 65px ;
+        }
         &__bg-white {
             background: white;
             width: 100%; 
@@ -13,13 +16,14 @@
             flex-direction: column;
             align-items: center;
             margin-top: 0;
+            padding-bottom: 50px;
         }
         &__reception {
             background: url(../img/reception_bg.jpg) no-repeat;
             margin-top: 0;
         }
         &__helping2 {            
-            background: url(../img/reception_bg.jpg) no-repeat;         
+            background: url(../img/helping_bg.jpg) no-repeat;         
         }
         &__map {
             background: url(../img/map.jpg) no-repeat;
@@ -70,6 +74,10 @@
         color: #262626;
         margin-bottom: 30px;
         z-index: 1;
+
+        &__service {
+            font-size: 36px;
+        }
         
         &__service, &__problem, &__violation, &__helping2, &__reception, &__contacts, &__discount {
             display: flex;
@@ -77,10 +85,8 @@
             align-items: center;
             &:after {
                 content: "";
-                // background: url(../img/line_dark.png) no-repeat;
                 width: 201px;
                 height: 14px;
-                // border: 2px solid red;
                 margin-top: 30px;
                 
             }
@@ -101,11 +107,11 @@
             font-size: 36px;
             line-height: 40px;
             width: 770px;
-            
+            margin-top: 50px;
             margin-left: auto;
             margin-right: auto;
-            // text-align: center;
-            // color: #262626;
+            margin-bottom: 20px;
+            
         }
         &__problem {
             font-size: 36px;
@@ -117,15 +123,26 @@
             line-height: 40px;
             font-weight: 700px;
             color: white;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
         &__reception span{
             display: inline;
         }
         &__contacts {
             color: white;
+            font-size: 36px;
+            margin-top: 55px;
+        }
+        &__discount {
+            font-size: 36px;
         }
         
+    }
+    &_section-subtitle {
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 65px;
     }
     &_section-title-mark {
         color: #ffd800;
@@ -175,5 +192,8 @@
     }
     &_contact-tel {        
         font-weight: 700;
+    }
+    &_contact-mail {
+        color: white;
     }
 }

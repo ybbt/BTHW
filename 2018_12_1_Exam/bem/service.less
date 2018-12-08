@@ -9,20 +9,28 @@
         }
     }
     &_button {
+        width: 230px;
+        height: 45px;
         position: absolute;
-        top: auto;
-        left: 70px;
+        left: 0;
         bottom: 30px;     
-
+        right: 0;
+        margin: auto;
     }
     &_title {
         height: 93px;
         color: #242728;
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 800;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-transform: uppercase;
+        text-align: center;
+        &__helping {
+            font-weight: 600;
+        }
         &__problem {
             font-size: 24px;
             justify-content: flex-start;
@@ -35,7 +43,7 @@
         &__problem {
             font-size: 14px;
             line-height: 22px;
-            color: #575757;
+            color: @mainColor;
             width: 630px;
             margin: 0 auto;
             height: 100%;
@@ -47,11 +55,8 @@
             justify-content: flex-start;
             font-size: 14px;
             line-height: 20px;
-            color: #575757;
+            color: @mainColor;
         }
     }
-    &__problem {
-        
-        
-    }
+    
 }

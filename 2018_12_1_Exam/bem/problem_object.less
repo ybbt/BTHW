@@ -1,17 +1,16 @@
 .problem-object {
     text-decoration: none;
-    color: #575757;
+    color: @mainColor;
     padding: 12px 30px;
     font-size: 14px;
     line-height: 16px;
     box-sizing: border-box;
-    // background-color: red;
-    // border: 2px solid green;
-    &:hover{
-        color: #733840;
-    }
-    &:active {
+    &__active {
         background-color: white;
         font-weight: 700;
+    }
+    &:hover{
+        color: #733840;
+        background-color: #f8f8f8;
     }
 }

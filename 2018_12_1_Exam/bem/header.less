@@ -10,6 +10,28 @@
     flex-direction: column;
     justify-content: space-between;
 	align-items: center;
+	&_logo {
+		display: flex;
+	}
+	&_logo-title{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 16px;
+		&:after {
+			content: "";
+			width: 290px;
+			height: 2px;
+			background-color: white;
+			order: 1;
+		}
+	}
+	&_logo-title-ru {
+		order: 0;
+	}
+	&_logo-title-en {
+		order: 2;
+	}
 	&::before {
 		content: "";
 		background-color: rgba(91, 83, 84, 0.7);
@@ -34,11 +56,14 @@
 	}
 	&_tel {
 		font-size: 18px;
-		line-height: 30px;
+		line-height: 1em;
+		margin-bottom: 5px;
 	}
 	&_email {
+		display: block;
 		font-size: 13px;
 		line-height: 13px;
+		color: white;
 	}
 	&_title {
 		font-size: 40px;
@@ -58,9 +83,11 @@
 	}
 	&_form-title {
 		margin-bottom: 35px;
+		font-size: 20px;
+		letter-spacing: 2px;
 	}
 	&_form-title-mark {
-
+		font-weight: 700;
 		color: #ffea73;
 	}
 	&_scrol {
