@@ -1,7 +1,12 @@
 .service {
     background: white;
-    &_image {
+    &_pic {
         position: relative;
+    }
+    &_image {
+        &__problem {
+            margin: 50px 70px 0;
+        }
     }
     &_button {
         position: absolute;
@@ -18,7 +23,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &__article-text {
+        &__problem {
+            font-size: 24px;
+            justify-content: flex-start;
+            font-weight: 700;
+            width: 630px;
+            margin: 0 auto;
+        }
+    }
+    &_text {
+        &__problem {
+            font-size: 14px;
+            line-height: 22px;
+            color: #575757;
+            width: 630px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        &__violation {
             height: 183px;
             margin-top: 20px;
             align-items: flex-start;
@@ -28,5 +50,8 @@
             color: #575757;
         }
     }
-
+    &__problem {
+        
+        
+    }
 }
