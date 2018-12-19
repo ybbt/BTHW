@@ -46,8 +46,8 @@ for (i=0; i< playList.length; i++) {
     var elli = document.createElement('li');
     elli.classList.add("ba-tune");
    
-    var t = document.querySelector('#tmpl'),
-    svg = t.content.querySelector(".ba-tune__like");
+    var t = document.querySelector('#tmpl');
+   
     var cloneSvg = document.importNode(t.content, true);
 
     var eldiv = document.createElement('div');
