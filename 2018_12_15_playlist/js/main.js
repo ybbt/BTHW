@@ -59,7 +59,7 @@ for (i=0; i< playList.length; i++) {
 
     var elspana = document.createElement('span');
     elspana.classList.add("ba-tune__author");
-    elspana.textContent = playList[i].author;
+    elspana.textContent = ucFirst(playList[i].author);
 
     var eldivs = document.createElement('div');
     eldivs.classList.add("ba-tune__song"); 
@@ -74,3 +74,7 @@ for (i=0; i< playList.length; i++) {
 
     el.appendChild(elli);
 }
+
+function ucFirst(str) {	
+	return str.charAt(0).toUpperCase() + str.slice(1);	
+};
