@@ -1,0 +1,71 @@
+include ../../bem/header-menu/header-menu.pug
+include ../../data/data.pug
+//- include bem/main/main.pug
+//- include bem/footer/footer.pug
+
+
+
+doctype html
+html(lang='en')
+head
+	meta(charset='UTF-8')
+	title Exam #2
+	link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+		
+	link(rel= "stylesheet" href="css/normalize.css")
+	link(rel= "stylesheet" href="css/index-style.css")
+
+	link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick.css")
+	link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css")
+
+	link(rel= "stylesheet" href="libs/bootstrap/bootstrap-grid.css")
+
+	link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+	script(src="https://maps.googleapis.com/maps/api/js?callback=loadMap" async defer)
+	
+body
+	header.header
+		.header_nav
+			img.header_logo(src="img/service_img/Logo.svg", alt="")
+			+headerMenu(menuItem)
+			.header_social
+				a(href="")
+					i.fab.fa-facebook-f
+				a(href="")
+					i.fab.fa-twitter
+				a(href="")
+					i.fab.fa-instagram
+
+		.header_heading._headerConteiner
+			.header_heading-item
+				.header_heading-title Simple & mordern
+				.header_heading-subtitle We make the world's beautiful every day
+			.header_heading-item
+				.header_heading-title Lorem, ipsum dolor
+				.header_heading-subtitle Lorem ipsum dolor sit amet.
+			.header_heading-item
+				.header_heading-title Tempera farm
+				.header_heading-subtitle Lost creadera yer fasder
+		.header_scroll
+			img(src="img/service_img/arrow.png", alt="").header_scroll-img
+	main.main
+		section.main_project
+			.main_proj-title what we do
+		section.main_news
+		section.main_gallery
+		section.main_contact
+			.map._map
+
+
+
+
+
+	//- +header
+	//- +main
+	//- +footer
+	script(type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js")
+		
+	script(src="js/script.js")
