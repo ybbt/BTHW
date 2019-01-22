@@ -1,0 +1,38 @@
+.project {
+	display: flex;
+	width: 100%;
+
+	&__right {
+
+	}
+
+	&__left {
+
+	}
+
+	&_img {
+
+		&__right {
+			box-shadow: @dx -@dy 0 0 @colorRight; 
+		}
+
+		&__left {
+			box-shadow: -@dx -@dy 0 0 @colorLeft; 
+		}
+	}
+
+	&_content {
+
+	}
+
+	&_text {
+		font-family: @fontFamOpenSans;
+		font-size: 18px;
+	}
+
+	&_name {
+		font-family: @fontFamOpenSans;
+		font-style: italic;
+		font-size: 18px;
+	}
+}

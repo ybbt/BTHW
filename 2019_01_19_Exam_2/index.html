@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/index-style.css">
   <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
-  <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?callback=loadMap" async defer></script>
@@ -16,36 +16,139 @@
 <body>
   <header class="header">
     <div class="header_nav"><img class="header_logo" src="img/service_img/Logo.svg" alt="">
-      <div class="header-menu"><a class="header-menu_item" href="">about us</a><a class="header-menu_item" href="">project</a><a class="header-menu_item" href="">news</a><a class="header-menu_item" href="">contact</a>
+      <div class="header-menu"><a class="header-menu_item _aboutUs" href="">about us</a><a class="header-menu_item _project" href="">project</a><a class="header-menu_item _news" href="">news</a><a class="header-menu_item _contact" href="">contact</a>
       </div>
-      <div class="header_social"><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
+      <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
     <div class="header_heading _headerConteiner">
-      <div class="header_heading-item">
-        <div class="header_heading-title">Simple & mordern</div>
-        <div class="header_heading-subtitle">We make the world's beautiful every day</div>
+      <div class="heading-item"><img class="heading-item_img" src="img/bg_item_1.jpg" alt=""/>
+        <div class="heading-item_text">
+          <div class="heading-item_title">Simple &amp; mordern</div>
+          <div class="heading-item_subtitle">We make the world's beautiful every day</div>
+        </div>
       </div>
-      <div class="header_heading-item">
-        <div class="header_heading-title">Lorem, ipsum dolor</div>
-        <div class="header_heading-subtitle">Lorem ipsum dolor sit amet.</div>
+      <div class="heading-item"><img class="heading-item_img" src="img/bg_item_2.jpg" alt=""/>
+        <div class="heading-item_text">
+          <div class="heading-item_title">Lorem, ipsum dolor</div>
+          <div class="heading-item_subtitle">Lorem ipsum dolor sit amet</div>
+        </div>
       </div>
-      <div class="header_heading-item">
-        <div class="header_heading-title">Tempera farm</div>
-        <div class="header_heading-subtitle">Lost creadera yer fasder</div>
+      <div class="heading-item"><img class="heading-item_img" src="img/bg_item_3.jpg" alt=""/>
+        <div class="heading-item_text">
+          <div class="heading-item_title">Tempera farm</div>
+          <div class="heading-item_subtitle">Lost creadera yer fasder</div>
+        </div>
       </div>
     </div>
     <div class="header_scroll"><img class="header_scroll-img" src="img/service_img/arrow.png" alt=""></div>
   </header>
   <main class="main">
-    <section class="main_project">
-      <div class="main_proj-title">what we do</div>
+    <div class="main_project-container">
+      <section class="main_project">
+        <h1 class="title title__black title__center">what we do</h1>
+        <div class="project project__left"><img class="project_img project_img__left" src="img/project_1.jpg" alt=""/>
+          <main class="project_content">
+            <h1 class="title title__black title__left"><span class="title__plaintitle">One World</span>Trade Center
+            </h1>
+            <p class="project_text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+            <button class="button button__project">more details</button>
+            <div class="project_name">New York City, United States - 1776 feet</div>
+          </main>
+        </div>
+        <div class="project project__right">
+          <main class="project_content">
+            <h1 class="title title__black title__left"><span class="title__plaintitle">International</span>Commerce Centre
+            </h1>
+            <p class="project_text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+            <button class="button button__project">more details</button>
+            <div class="project_name">Hong Kong - 1588 Feet</div>
+          </main><img class="project_img project_img__right" src="img/project_2.jpg" alt=""/>
+        </div>
+      </section>
+    </div>
+    <section class="main_news">
+      <h1 class="title title__white title__center">latest news</h1>
+      <div class="main_slider _mainContainer">
+        <div class="news-item"><img class="news-item_img" src="img/news_1.jpg" alt=""/>
+          <h1 class="title title__news title__black title__left">See The Unmatched Beauty Of The Great.</h1>
+          <p class="news-item_text">Free directories: directories are perfect for customers that are... searching for a </p>
+          <div class="news-item_author"><img class="news-item_author-photo" src="img/author_1.jpg" alt=""/>
+            <div class="news-item_author-data">
+              <h1 class="title__news-item title__left title__black">isaac dunn</h1>
+              <h3 class="news-item_date">09 Feb 2017</h3>
+            </div>
+          </div>
+        </div>
+        <div class="news-item"><img class="news-item_img" src="img/news_2.jpg" alt=""/>
+          <h1 class="title title__news title__black title__left">Effective Advertising Pointers.</h1>
+          <p class="news-item_text">Having a home based business is a wonderful asset to your life...</p>
+          <div class="news-item_author"><img class="news-item_author-photo" src="img/author_2.jpg" alt=""/>
+            <div class="news-item_author-data">
+              <h1 class="title__news-item title__left title__black">Dominic Freeman</h1>
+              <h3 class="news-item_date">24 Apr 2017</h3>
+            </div>
+          </div>
+        </div>
+        <div class="news-item"><img class="news-item_img" src="img/news_3.jpg" alt=""/>
+          <h1 class="title title__news title__black title__left">Hypnotize Yourself Into The Ghost.</h1>
+          <p class="news-item_text">There are many things that are important to catalog design....</p>
+          <div class="news-item_author"><img class="news-item_author-photo" src="img/author_3.jpg" alt=""/>
+            <div class="news-item_author-data">
+              <h1 class="title__news-item title__left title__black">Alice Ward</h1>
+              <h3 class="news-item_date">30 Ded 2017</h3>
+            </div>
+          </div>
+        </div>
+        <div class="news-item"><img class="news-item_img" src="img/news_2.jpg" alt=""/>
+          <h1 class="title title__news title__black title__left">See The Unmatched Beauty Of The Great.</h1>
+          <p class="news-item_text">Free directories: directories are perfect for customers that are... searching for a </p>
+          <div class="news-item_author"><img class="news-item_author-photo" src="img/author_1.jpg" alt=""/>
+            <div class="news-item_author-data">
+              <h1 class="title__news-item title__left title__black">isaac dunn</h1>
+              <h3 class="news-item_date">09 Feb 2017</h3>
+            </div>
+          </div>
+        </div>
+        <div class="news-item"><img class="news-item_img" src="img/news_1.jpg" alt=""/>
+          <h1 class="title title__news title__black title__left">See The Unmatched Beauty Of The Great.</h1>
+          <p class="news-item_text">Free directories: directories are perfect for customers that are... searching for a </p>
+          <div class="news-item_author"><img class="news-item_author-photo" src="img/author_3.jpg" alt=""/>
+            <div class="news-item_author-data">
+              <h1 class="title__news-item title__left title__black">isaac dunn</h1>
+              <h3 class="news-item_date">09 Feb 2017</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="main_news"></section>
-    <section class="main_gallery"></section>
+    <section class="main_gallery">
+      <h1 class="title title__center title__black">gallery</h1>
+      <div class="main_gallery-container">
+        <div class="main_gallery-container">
+          <div class="main_main-preview"><img class="main_gallery-img" src="img/gallery_1.jpg" alt=""></div>
+          <div class="main_preview"><img class="main_gallery-img" src="img/gallery_2_1.jpg" alt=""><img class="main_gallery-img" src="img/gallery_2_2.jpg" alt=""><img class="main_gallery-img" src="img/gallery_2_3.jpg" alt=""><img class="main_gallery-img" src="img/gallery_2_4.jpg" alt=""></div>
+        </div>
+      </div>
+      <button class="button">see more</button>
+    </section>
     <section class="main_contact">
-      <div class="map _map"></div>
+      <div class="main_map _map"></div>
+      <form class="form" action=""></form>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_credit"><img class="footer_logo" src="img/service_img/Logo.svg" alt="">
+        <div class="footer_copyrighting">
+          <div class="footer_copyright">Copyrights © 2017 Monticello Group</div>
+          <div class="footer_made-with">Made with  by Ga Huy</div>
+        </div>
+      </div>
+      <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
