@@ -3,7 +3,7 @@ mixin project(projectData)
 		if item.isLeft
 			.project.project__left
 				img.project_img.project_img__left(src= item.src, alt="")
-				main.project_content
+				main.project_content.project_content__left
 					h1.title.title__black.title__left
 						span.title__plaintitle= item.plaintitle
 						= item.title
@@ -12,7 +12,7 @@ mixin project(projectData)
 					.project_name= item.name
 		else
 			.project.project__right
-				main.project_content
+				main.project_content.project_content__right
 					h1.title.title__black.title__left
 						span.title__plaintitle= item.plaintitle
 						= item.title

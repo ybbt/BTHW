@@ -19,15 +19,21 @@
 		margin-right: auto;
 	}
 
-	// &_project {
-	// 	overflow: hidden;
-	// }
+	&_project-title {
+		margin-bottom: 170px;
+	}
+
+	&_project {
+		padding-top: 100px;
+	}
+
 
 	&_news {
 		height: 1035px;
 		background: linear-gradient( to top right, @colorRight, @colorLeft);
 		position: relative;
 		z-index: 1;
+		padding-top: 140px;
 
 		&::before {
 			content: url(../img/bg_news.png);
@@ -37,8 +43,17 @@
 		}
 	}
 
+	&_news-title {
+		margin-bottom: 95px;
+	}
+
 	&_gallery {
 		height: 1000px;
+		padding-top: 140px;
+	}
+
+	&_gallery-title {
+		margin-bottom: 90px;
 	}
 
 	&_gallery-container {
@@ -46,7 +61,12 @@
 		justify-content: center; 
 		width: 1170px; 
 		height: 438px;
-		margin: 0 auto;
+		margin: 0 auto 60px;
+	}
+
+	&_gallery-button {
+		display: flex;
+		justify-content: center;
 	}
 
 	&_preview {

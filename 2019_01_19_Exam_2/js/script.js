@@ -1,4 +1,25 @@
-// alert('joke');
+var scrollerArray = [
+	{
+		currSel: '._headerScroll',
+		destSel: '._main',
+	},
+	{
+		currSel: '._project',
+		destSel: '._mainProject',
+	},
+	{
+		currSel: '._news',
+		destSel: '._mainNews',
+	},
+	{
+		currSel: '._contact',
+		destSel: '._mainContact',
+	},
+	{
+		currSel: '._aboutUs',
+		destSel: '._mainGallery',
+	}
+]
 
 $(document).ready(function(){
 			
@@ -43,10 +64,26 @@ function loadMap() {
 };
 
 $(function(){
-	$('.header_scroll-img').on('click', function(){
-		var N = $('.main').offset().top;
-		$('html').animate({
-			scrollTop: N,
-		}, 1000)
-	})
+	// $('.header_scroll-img').on('click', function(){
+	// 	var N = $('.main').offset().top;
+	// 	$('html').animate({
+	// 		scrollTop: N,
+	// 	}, 1000)
+	// })
+
+	scrollerArray.forEach(function(item){
+		setClick(item.currSel, item.destSel);
+	});
+
+	//setClick('.header_scroll-img', '.main');
+
+	function setClick( currentSel, destinSel){
+		$(currentSel).on('click', function(e){
+			e.preventDefault();
+			var N = $(destinSel).offset().top;
+			$('html').animate({
+				scrollTop: N,
+			}, 1000)
+		})
+	}
 })

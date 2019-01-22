@@ -46,23 +46,25 @@ body
 			+headingItem(headingItemData)
 
 		.header_scroll
-			img(src="img/service_img/arrow.png", alt="").header_scroll-img
-	main.main
+			img(src="img/service_img/arrow.png", alt="").header_scroll-img._headerScroll
+	main.main._main
 		.main_project-container
-			section.main_project
-				h1.title.title__black.title__center what we do
+			section.main_project._mainProject
+				.main_project-title
+					h1.title.title__black.title__center.tittle__project what we do
 
 				+project(projectData)
 
-		section.main_news
-
-			h1.title.title__white.title__center latest news
+		section.main_news._mainNews
+			.main_news-title
+				h1.title.title__white.title__center latest news
 			.main_slider._mainContainer
 
 				+newsItem(newsItemData)
 
-		section.main_gallery
-			h1.title.title__center.title__black gallery
+		section.main_gallery._mainGallery
+			.main_gallery-title
+				h1.title.title__center.title__black gallery
 			.main_gallery-container
 				.main_gallery-container
 					.main_main-preview
@@ -72,8 +74,9 @@ body
 						img(src="img/gallery_2_2.jpg", alt="").main_gallery-img
 						img(src="img/gallery_2_3.jpg", alt="").main_gallery-img
 						img(src="img/gallery_2_4.jpg", alt="").main_gallery-img
-			button.button see more
-		section.main_contact
+			.main_gallery-button
+				button.button see more
+		section.main_contact._mainContact
 			.main_map._map
 			form.form(action="")
 	footer.footer
