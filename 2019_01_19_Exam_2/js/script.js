@@ -31,6 +31,7 @@ $(document).ready(function(){
 		dots: true,
 		autoplay: true,
 		autoplaySpeed: 4000,
+		draggable: true,
 	});
 	
 });
@@ -48,6 +49,7 @@ $(document).ready(function(){
 		// centerMode: true,
 		prevArrow: '<img src="img/service_img/arrow_left.png" class="arr-prev">',
 		nextArrow: '<img src="img/service_img/arrow_right.png" class="arr-next">',
+		
 	});
 	
 });
