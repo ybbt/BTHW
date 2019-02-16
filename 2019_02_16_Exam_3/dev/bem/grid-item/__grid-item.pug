@@ -1,0 +1,7 @@
+mixin gridItem(mod, dataGridItem)
+	.grid-item(class = mod == "dark" ? "grid-item__dark" : 
+						mod == "big" ? "grid-item__big" : "")
+		img(src=dataGridItem.src, alt="").grid-item_icon
+		hi.grid-item_title= dataGridItem.title
+		h2.grid-item_desc= dataGridItem.desc
+	

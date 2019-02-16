@@ -1,0 +1,6 @@
+mixin headerMenu(menuItemData)
+	.index-header-menu
+		each item in menuItemData
+			a.index-header-menu_item(href="", class="_menuScroll", data-dest=item.dest)= item.name
+
+

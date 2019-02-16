@@ -1,0 +1,72 @@
+
+
+.index-header {
+	width: 100%;
+	background-size: cover;
+	min-width: 1170px;
+	height: 100vh;
+	background-color: @colorMainBG;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	
+
+	&::before {
+		content: "";
+		background-image: url(../img/indexHeaderBG.webp) ;
+		background-size: cover;
+		position: absolute;
+		opacity: 0.5;
+		z-index: -1;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	&_nav {
+		z-index: 100;
+		//color: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1170px;
+		min-height: 54px;
+		position: absolute;
+		top: 53px;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+	}
+
+	&_logo {
+		height: 54px;
+	}
+
+	&_main-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&_title {
+		font-family: @fontFamiliProximaNovaSemibold;
+		font-size: 72px;
+		text-transform: uppercase;
+	}
+
+	&_subtitle {
+		width: 730px;
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+		font-family: @fontFamilyPT;
+		font-style: italic;
+		font-size: 30px;
+		text-align: center;
+	}
+}

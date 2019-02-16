@@ -1,0 +1,71 @@
+include ../../general/data/__data.pug
+include ../../bem/index-header-menu/__index-header-menu.pug
+include ../../bem/grid-item/__grid-item.pug
+include ../../bem/index-slider/__index-slider.pug
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title Exam #2
+		link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+		link(rel="shortcut icon" type="image/x-icon" href="/favicon.ico")
+		
+			
+		link(rel= "stylesheet" href="css/normalize.css")
+		link(rel= "stylesheet" href="css/index.css")
+
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick.css")
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css")
+
+		//- link(rel= "stylesheet" href="libs/bootstrap/bootstrap-grid.css")
+
+		link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	body
+		header.index-header
+			.index-header_nav
+				img.index-header_logo(src="img_serv/Logo.svg", alt="")
+				+headerMenu(menuItemData)
+			.index-header_main-title
+				h1.index-header_title CreativE DIGITAL Project
+				h2.index-header_subtitle Duis mollis, est non commodo luctus,  nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+		main.index-main._about
+			section.index-main_about
+				.index-main_about-container
+					.index-main_about-title
+						img(src="img/AboutUs.webp", alt="").index-main_about-img
+						div.index-main_container-icon
+							img(src="img_serv/Icon_AboutUs.png", alt="").index-main_about-icon 
+							div.index-main_about-title-text about us
+					.index-main_about-text-conteiner
+						.index-main_about-text.index-main_about-text__up.
+							Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+						.index-main_about-text.index-main_about-text__down.
+							Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+						div.index-main_about-button-container
+							button.button-main.button-main__about Learn More
+			section.index-main_services
+				.index-main_services-container
+					.index-main_services-grid.index-main_services-grid__left
+						
+						+gridItem("dark", dataGridItem[0])
+						+gridItem("light", dataGridItem[1])
+						+gridItem("light", dataGridItem[2])
+						+gridItem("dark", dataGridItem[3])
+					.index-main_services-grid.index-main_services-grid__right
+						+gridItem("big", dataGridItem[4])
+
+
+			section.index-main_works
+				div.index-main_works-container._mainContainer
+					+slider(newsItemData)
+
+		script(type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js")
+
+		script(src="js/index.js")
+
+		
+
+		

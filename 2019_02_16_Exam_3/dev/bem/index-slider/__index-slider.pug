@@ -1,0 +1,6 @@
+//- пример слайдера
+mixin slider(newsItemData)
+	each item in newsItemData
+		.news-item
+			img.news-item_img(src= item.src, alt="")
+			
